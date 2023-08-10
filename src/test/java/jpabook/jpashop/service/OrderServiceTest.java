@@ -32,8 +32,6 @@ public class OrderServiceTest {
     @Autowired
     OrderRepository orderRepository;
 
-
-
     @Test
     public void 상품주문() throws Exception {
 
@@ -68,7 +66,7 @@ public class OrderServiceTest {
         orderService.order(member.getId(), item.getId(), orderCount);
         
         //Then
-        fail("재고 수량 부족 예외가 발생하애 한다.");
+        fail("재고 수량 부족 예외가 발생해야 한다.");
     }
 
     @Test
